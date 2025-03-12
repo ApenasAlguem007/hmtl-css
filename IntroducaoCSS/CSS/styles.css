@@ -1,0 +1,22 @@
+/* Teste de CSS External */
+
+body {
+    padding-bottom: 500px;
+}
+
+
+h3{
+  color: purple;  
+}
+
+
+ul {
+    border: 1px solid blueviolet;
+    padding: 10px;
+}
+
+li {
+    color: darkblue;
+}
+
+/* Regra de segurança: cuidado com o conteúdo dos comentários pois aparece no DevTools */
