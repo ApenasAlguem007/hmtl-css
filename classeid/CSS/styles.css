@@ -7,4 +7,57 @@
     padding: 5px;
 }
 
+/* id */
+
+        #titulo-com-id{
+    
+            background-color: rgb(19, 122, 148);
+  
+            color: blanchedalmond;
+  
+            padding: 10px;
+  
+            font-size: 40px;
+     
+}
+
+/* regras  */
+
+
+h1{
+
+    border-bottom: 2px solid orangered;
+
+}
+
+.class-titulo{
+    border-bottom: 3px solid paleturquoise;
+
+}
+
+#id-titulo{
+    border-bottom: 3px solid goldenrod;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
