@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
     <meta charset="UTF-8">
@@ -7,30 +8,31 @@
     <title>Formulario</title>
     <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
-    
-        <h1>Formulário</h1>
+
+    <h1>Formulário</h1>
     <form action="registro.php" method="GET">
         <div>
-            <label> Nome: </label>  <input type="text"/>
+            <label> Nome: </label> <input type="text" />
         </div>
-           
 
 
-<!-- Atributo Name -->
 
-    <div>
+        <!-- Atributo Name -->
+
+        <div>
             <label>Idade:</label>
-            <input type="text" name="age">
+            <input type="number" name="age">
 
-    </div>
+        </div>
 
 
-    <!-- Atributo Label -->
+        <!-- Atributo Label -->
 
         <div>
             <label for="age">Idade:</label>
-            <input type="text" name="age">
+            <input type="number" name="age">
         </div>
 
 
@@ -39,31 +41,31 @@
         <div>
 
             <label for="cidade">Selecone sua Cidade:</label>
-                <select name="cidade">
-                    <option value="São Paulo"> São Paulo</option>
-                    <option value="Curitiba">Curitiba</option>
-                    <option value="Jabaquara"> Jabaquara </option>
+            <select name="cidade">
+                <option value="São Paulo"> São Paulo</option>
+                <option value="Curitiba">Curitiba</option>
+                <option value="Jabaquara"> Jabaquara </option>
 
             </select>
 
 
-        <!-- Selected -->
+            <!-- Selected -->
 
-        <div>
-            <label for="selecao">Quem vai ganhar a próxima Copa do Mundo?</label>
+            <div>
+                <label for="selecao">Quem vai ganhar a próxima Copa do Mundo?</label>
                 <select name="times">
                     <option value="Argentina">Argentina</option>
                     <option value="Franca">França</option>
                     <option value="Alemanha">Alemanha</option>
                     <option value="Brasil" selected>Brasil</option>
-            </select>
+                </select>
 
 
-            <!-- Seleção de vários Select - Multiple -->
+                <!-- Seleção de vários Select - Multiple -->
 
-            <div>
-                <label for="acessorios">Selecione os acessórios do seu computador</label>
-                    <select name="acessorios" multiple >
+                <div>
+                    <label for="acessorios">Selecione os acessórios do seu computador</label>
+                    <select name="acessorios" multiple>
                         <option value="Mouse">Mouse</option>
                         <option value="Teclado">Teclado</option>
                         <option value="Mouse-Pad">Mouse PAD</option>
@@ -71,114 +73,215 @@
                         <option value="Web-cam">Web-cam</option>
                     </select>
 
-            </div>
+                </div>
 
 
-            <!-- Textarea -->
+                <!-- Textarea -->
 
-            <div>
-                <label for="feedback">Escreva o seu feedback sobre o nosso site!</label>
+                <div>
+                    <label for="feedback">Escreva o seu feedback sobre o nosso site!</label>
                     <textarea name="feedback"></textarea>
 
-            </div>
+                </div>
 
 
-            <!-- Fieldset (uma caixinha) e Legend (texto na linha da caixinha) -->
+                <!-- Fieldset (uma caixinha) e Legend (texto na linha da caixinha) -->
 
-            <div>
-                <fieldset>
-                    <legend> Insira o seu endereço:</legend>
-                    <label for="rua"> Rua:</label>
+                <div>
+                    <fieldset>
+                        <legend> Insira o seu endereço:</legend>
+                        <label for="rua"> Rua:</label>
                         <input type="text" name="rua">
-                    <label for="bairro">Bairro:</label>
+                        <label for="bairro">Bairro:</label>
                         <input type="text" name="bairro">
-                </fieldset>
+                    </fieldset>
 
-            </div>
+                </div>
 
 
-        <!-- datalist  -->
+                <!-- datalist  -->
 
-            <div>
-                <label for="livro">Selecione seu livro:</label>
+                <div>
+                    <label for="livro">Selecione seu livro:</label>
                     <input type="text" list="livros" name="livro">
-                        <datalist id="livros">
-                            <option value="Crepúsculo"></option>
-                            <option value="Harry Potter e a Pedra Filosofal"></option>
-                            <option value="A Hospedeira"></option>
-                            <option value="HArry Potter e o Cálice de Fogo"></option>
+                    <datalist id="livros">
+                        <option value="Crepúsculo"></option>
+                        <option value="Harry Potter e a Pedra Filosofal"></option>
+                        <option value="A Hospedeira"></option>
+                        <option value="HArry Potter e o Cálice de Fogo"></option>
 
-                        </datalist>
-            </div>
+                    </datalist>
+                </div>
 
-        <!-- Input password -->
+                <!-- Input password -->
 
-        <div>
-            <label for="senha">Senha:</label>
-            <input type="password" name="senha"/>
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" />
 
-        </div>
-            
-
- <!-- Input Radio (botão Radio) -->
-
- <div>
-    <label for="genero">Qual a sua Identidade de Gênero:</label>
-    <div class="radio">
-        <input type="radio" value="Mulher Cis" name="genero"/>
-    <label for="Mulher">Mulher CIS</label>
-
-    </div>
-
- </div>
+                </div>
 
 
- <div>
-    <label for="genero">Qual a sua Identidade de Gênero:</label>
-    <div class="radio">
-        <input type="radio" value="Homem CIS" name="genero"/>
-    <label for="Homem">Homem CIS</label>
+                <!-- Input Radio (botão Radio) -->
 
-    </div>
-
-    <div class="radio">
-        <input type="radio" value="Mulher-Trans" name="genero"/>
-    <label for="Mulher-Trans">Mulher Trans</label>
-
-    </div>
-
- </div>
+                <div>
+                    <label for="genero">Qual a sua Identidade de Gênero:</label>
+                    <div class="radio">
+                        <input type="radio" value="Mulher Cis" name="genero" />
+                        <label for="Mulher">Mulher</label>
+                    </div>
+                </div>
 
 
- <div>
-    <label for="genero">Qual a sua Identidade de Gênero:</label>
-    <div class="radio">
-        <input type="radio" value="Homem-Trans" name="genero"/>
-    <label for="Homem-Trans">Homem Trans</label>
+                <div>
+                    <div class="radio">
+                        <input type="radio" value="Homem CIS" name="genero" />
+                        <label for="Homem">Homem</label>
+                    </div>
 
-    </div>
+                    <div class="radio">
+                        <input type="radio" value="Mulher-Trans" name="genero" />
+                        <label for="Mulher-Trans">Outros</label>
 
- </div>
+                    </div>
 
-
-
-        <!-- Input Reset (Limpa formulário) -->
-
-        <input type="reset" value="Apagar"/>
-
-   
+                </div>
 
 
+                <div>
+                    <label for="genero">Qual a sua Identidade de Gênero:</label>
+                    <div class="radio">
+                        <input type="radio" value="Homem-Trans" name="genero" />
+                        <label for="Homem-Trans">Homem Trans</label>
 
-        <!-- Submit botão -->
+                    </div>
 
-        <input type="submit" value="Enviar"/>
 
-        <!--  -->
+                </div>
+
+
+                <!-- Input Check box -->
+
+               
+
+                <div>
+                    <label for="linguasestrangeiras"> Quais linguas você pretende estudar:</label>
+
+                    <!-- reaproveitando o css da class radio, para evitar escrever algo semelhante repetidas vezes. -->
+                    <div class="radio">
+                        <input type="checkbox" name="linguasestrangeiras" value="ingles">
+                        <label for="ingles">Ingles</label>                        
+                    </div>
+
+                    <div class="radio">
+                        <input type="checkbox" name="linguasestrangeiras" value="espanhol">
+                        <label for="espanhol">Espanhol</label>
+                    </div>
+
+                    <div class="radio">
+                        <input type="checkbox" name="linguasestrangeiras" value="japones">
+                        <label for="japones">Japonês</label>
+                    </div>
+                    
+                </div>
+
+
+                <!-- Input Reset (Limpa formulário) -->
+
+                <input type="reset" value="Apagar" />
+
+<br>
+                <!-- Submit botão -->
+
+                <input type="submit" value="Enviar" />
+
+<br>
+<br>
+                <!-- imput data -->
+                 
+                <div>
+                    <label for="datanascimento"> Data de Nascimento</label>
+                    <input type="date" name="datadenascimento">
+
+                </div>
+
+
+                <!-- Imput File -->
+
+                <div>
+                    <label for="arquivo">Insira o seu curriculo em PDF</label>
+                    <input type="file" name="arquivo">
+                </div>
+
+
+                <!-- Imput Number -->
+
+                 <div>
+                    <label for="certificados">Quantos certificados você possui?</label>
+                    <input type="number" name="certificados">
+                 </div>
+
+                <!-- Imput email -->
+
+                <div>
+                    <label for="emailinserido"> Insira o seu E-mail:</label>
+                    <input type="email" name="emailinserido">
+                </div>
+
+
+                <!-- Atriubto Value -->
+
+                <div>
+                    <label for="confirmaraula"> Você assistiu a aula de treinamento da empresa</label>
+                    
+                    <input type="text" value="Confirmo que assisti!" name="confirmaraula">
+
+                    <input type="submit" value="Enviar" >
+
+                    <input type="reset" value="Limpar">
+                </div>
+
+                <!-- atributo disabled (impossibilita o acesso) -->
+
+                <div>
+                    <p>Informe seu RG: </p>
+                    <input type="text" value="Não precisa preencher" disable>
+
+                    <input type="submit" value="Enviar" >
+
+                    <input type="reset" value="Limpar">
+                </div>
+
+                <!-- ATributo Placeholder -->
+
+                <div>
+                    <label for="pesquisa">Como você achou o nosso site?</label>
+                    <input type="text" name="pesquisa" placeholder="No Google ou Instagram">
+                </div>
+
+
+                <!-- Atributo Required -->
+
+                <div>
+                    <label for="sobrenome">Digite o seu Sobrenome</label>
+                    <input type="text" name="sobrenome" placeholder="Sobrenome Completo" required>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
 
     </form>
 
 
 
 </body>
+
 </html>
