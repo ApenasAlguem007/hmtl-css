@@ -166,6 +166,9 @@ body {
     flex: 2;
 }
 
+
+
+
 /* Flex-basis */
 
 .flex-basis{
@@ -177,5 +180,70 @@ body {
 }
 
 .flex-basis .maior{
+    /* Este 1, ocupa o espaço restante do container.. */
     flex-grow: 1;
 }
+
+
+
+
+
+
+/* Flex shrink */
+
+.flex-shrink{
+    display: flex;
+}
+
+.flex-shrink .caixa{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 1;
+    width: auto;
+}
+
+.flex-basis .menor{
+    flex-shrink: 2;
+}
+
+
+
+
+
+/* Flex Shorthand */
+
+
+.flex-shorthand{
+    display: flex;
+}
+
+.flex-shorthand .caixa{
+    width: auto;
+    flex: 1 1 50px; /* 1 de grow, 1 de shrink e 50 px de basis*/
+}
+
+.flex-shorthand .diferenciada{
+    flex: 4 1 300px;
+}
+
+
+
+/* ALign - self */
+
+.align-self{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(0, 132, 255);
+}
+
+.align-self .diferenciada{
+align-self: flex-end;
+}
+
+.align-self .diferenciada2{
+align-self: flex-start;
+}
+
+
+
